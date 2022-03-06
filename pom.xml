@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.aks</groupId>
 	<artifactId>base-project</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<name>base-project</name>
 	<description>Base project of good projects</description>
 	<packaging>pom</packaging>
