@@ -13,7 +13,7 @@ import java.util.List;
 @Configuration
 public class RedisConfiguration {
 
-    @Bean
+  /*  @Bean
     public JedisConnectionFactory jedisConnectionFactoryForStandAlone(
             @Value("${redis.hostName}") String hostName,
             @Value("${redis.port}") int port,
@@ -23,7 +23,7 @@ public class RedisConfiguration {
         redisStandaloneConfiguration.setPort(port);
         redisStandaloneConfiguration.setDatabase(database);
         return new JedisConnectionFactory(redisStandaloneConfiguration);
-    }
+    }*/
 
    /* @Bean
     public JedisConnectionFactory jedisConnectionFactoryForCluster(

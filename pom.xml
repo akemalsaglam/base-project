@@ -21,7 +21,13 @@
         <github.global.server>github</github.global.server>
         <jedis.version>4.1.0</jedis.version>
         <mapstruct.version>1.4.2.Final</mapstruct.version>
+        <mapstruct-processor.version>1.4.2.Final</mapstruct-processor.version>
+        <spring-boot-maven-plugin.version>2.6.4</spring-boot-maven-plugin.version>
+        <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
+        <lombok.version>1.18.22</lombok.version>
+        <lombok-mapstruct-binding.version>0.1.0</lombok-mapstruct-binding.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -131,7 +137,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${project.parent.version}</version>
+                <version>${spring-boot-maven-plugin.version}</version>
                 <configuration>
                     <excludes>
                         <exclude>
@@ -141,40 +147,30 @@
                     </excludes>
                 </configuration>
             </plugin>
-            <!--<plugin>
-                <artifactId>maven-deploy-plugin</artifactId>
-                <version>2.8.1</version>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
                 <configuration>
-                    <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo
-                    </altDeploymentRepository>
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.mapstruct</groupId>
+                            <artifactId>mapstruct-processor</artifactId>
+                            <version>${mapstruct-processor.version}</version>
+                        </path>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>${lombok.version}</version>
+                        </path>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok-mapstruct-binding</artifactId>
+                            <version>${lombok-mapstruct-binding.version}</version>
+                        </path>
+                    </annotationProcessorPaths>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>com.github.github</groupId>
-                <artifactId>site-maven-plugin</artifactId>
-                <version>0.11</version>
-                <configuration>
-                    <message>Maven artifacts for ${project.version}</message>  &lt;!&ndash; git commit message &ndash;&gt;
-                    <noJekyll>true</noJekyll>                                  &lt;!&ndash; disable webpage processing &ndash;&gt;
-                    <outputDirectory>${project.build.directory}/mvn-repo
-                    </outputDirectory> &lt;!&ndash; matches distribution management repository url above &ndash;&gt;
-                    <branch>refs/heads/mvn-repo</branch>                       &lt;!&ndash; remote branch name &ndash;&gt;
-                    <includes>
-                        <include>**/*</include>
-                    </includes>
-                    <repositoryName>base-project</repositoryName>      &lt;!&ndash; github repo name &ndash;&gt;
-                    <repositoryOwner>akemalsaglam</repositoryOwner>    &lt;!&ndash; github username  &ndash;&gt;
-                </configuration>
-                <executions>
-                    &lt;!&ndash; run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase &ndash;&gt;
-                    <execution>
-                        <goals>
-                            <goal>site</goal>
-                        </goals>
-                        <phase>deploy</phase>
-                    </execution>
-                </executions>
-            </plugin>-->
         </plugins>
     </build>
     <repositories>
@@ -213,12 +209,5 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
-
- <!--   <distributionManagement>
-        <repository>
-            <id>github</id>
-            <url>https://raw.github.com/akemalsaglam/base-project/mvn-repo/</url>
-        </repository>
-    </distributionManagement>-->
 
 </project>
