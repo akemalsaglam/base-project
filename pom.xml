@@ -19,17 +19,22 @@
         <java.version>11</java.version>
         <spring-cloud.version>2021.0.3</spring-cloud.version>
         <github.global.server>github</github.global.server>
-        <mapstruct.version>1.4.2.Final</mapstruct.version>
+        <mapstruct.version>1.5.1.Final</mapstruct.version>
         <mapstruct-processor.version>1.4.2.Final</mapstruct-processor.version>
         <spring-boot-maven-plugin.version>2.6.4</spring-boot-maven-plugin.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <lombok.version>1.18.22</lombok.version>
         <lombok-mapstruct-binding.version>0.1.0</lombok-mapstruct-binding.version>
-        <graphql-java.version>11.0</graphql-java.version>
+        <graphql-java.version>18.0</graphql-java.version>
         <graphql-spring-boot-starter.version>5.0.2</graphql-spring-boot-starter.version>
         <graphql-java-tools.version>5.2.4</graphql-java-tools.version>
         <graphiql-spring-boot-starter.version>5.0.2</graphiql-spring-boot-starter.version>
-        <graphql-java-extended-scalars.version>2022-02-25T03-14-46-8c3b172</graphql-java-extended-scalars.version>
+        <graphql-java-extended-scalars.version>18.1</graphql-java-extended-scalars.version>
+        <aws-java-sdk-s3.version>1.12.239</aws-java-sdk-s3.version>
+        <aws-java-sdk-ses.version>1.12.239</aws-java-sdk-ses.version>
+        <io.jsonwebtoken.version>0.9.1</io.jsonwebtoken.version>
+        <com.graphql-java-kickstart.version>12.0.0</com.graphql-java-kickstart.version>
+        <spring-boot-starter-freemarker.version>2.7.0</spring-boot-starter-freemarker.version>
     </properties>
 
     <dependencies>
@@ -132,6 +137,37 @@
             <artifactId>graphql-java-extended-scalars</artifactId>
             <version>${graphql-java-extended-scalars.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-ses</artifactId>
+            <version>${aws-java-sdk-ses.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-s3</artifactId>
+            <version>${aws-java-sdk-s3.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+            <version>${spring-boot-starter-freemarker.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>${io.jsonwebtoken.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.graphql-java-kickstart</groupId>
+            <artifactId>graphql-java-servlet</artifactId>
+            <version>${com.graphql-java-kickstart.version}</version>
+        </dependency>
+
     </dependencies>
     <dependencyManagement>
         <dependencies>
