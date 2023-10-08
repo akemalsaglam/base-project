@@ -43,7 +43,9 @@
     <caffeine.cache.version>3.1.8</caffeine.cache.version>
     <org.mnode.ical4j.version>3.2.2</org.mnode.ical4j.version>
     <com.theokanning.openai-gpt3-java.version>0.16.0</com.theokanning.openai-gpt3-java.version>
-    <okhttp>5.0.0-alpha.11</okhttp>
+    <okhttp.version>5.0.0-alpha.11</okhttp.version>
+    <de.dentrassi.crypto.version>2.2.2</de.dentrassi.crypto.version>
+    <com.newrelic.agent.java.version>7.11.1</com.newrelic.agent.java.version>
 
     <!--graphql versiyonlarını kesinlikle değiştirme versiyon uyumsuzluğu var-->
     <graphql-java.version>11.0</graphql-java.version>
@@ -292,6 +294,20 @@
       <groupId>com.squareup.okhttp3</groupId>
       <artifactId>okhttp</artifactId>
       <version>${okhttp.version}</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>pem-keystore</artifactId>
+      <groupId>de.dentrassi.crypto</groupId>
+      <version>${de.dentrassi.crypto.version}</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>newrelic-java</artifactId>
+      <groupId>com.newrelic.agent.java</groupId>
+      <scope>provided</scope>
+      <type>zip</type>
+      <version>${com.newrelic.agent.java.version}</version>
     </dependency>
 
   </dependencies>
