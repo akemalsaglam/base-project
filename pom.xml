@@ -27,21 +27,21 @@
     <lombok.version>1.18.22</lombok.version>
     <lombok-mapstruct-binding.version>0.1.0</lombok-mapstruct-binding.version>
 
-    <aws-java-sdk-s3.version>1.12.239</aws-java-sdk-s3.version>
-    <aws-java-sdk-ses.version>1.12.239</aws-java-sdk-ses.version>
-    <io.jsonwebtoken.version>0.9.1</io.jsonwebtoken.version>
+    <aws-java-sdk-s3.version>1.12.565</aws-java-sdk-s3.version>
+    <aws-java-sdk-ses.version>1.12.565</aws-java-sdk-ses.version>
+    <io.jsonwebtoken.version>0.12.2</io.jsonwebtoken.version>
     <com.graphql-java-kickstart.version>12.0.0</com.graphql-java-kickstart.version>
     <spring-boot-starter-freemarker.version>2.7.0</spring-boot-starter-freemarker.version>
     <spring-boot-starter-oauth2-client.version>2.7.0</spring-boot-starter-oauth2-client.version>
-    <aws-java-sdk-sns.version>1.12.500</aws-java-sdk-sns.version>
+    <aws-java-sdk-sns.version>1.12.565</aws-java-sdk-sns.version>
     <springfox-swagger-ui.version>3.0.0</springfox-swagger-ui.version>
     <springfox-boot-starter.version>3.0.0</springfox-boot-starter.version>
     <springfox-swagger2.version>3.0.0</springfox-swagger2.version>
-    <poi-ooxml.version>5.2.2</poi-ooxml.version>
-    <poi.version>5.2.2</poi.version>
+    <poi-ooxml.version>5.2.4</poi-ooxml.version>
+    <poi.version>5.2.4</poi.version>
     <stripe-java.version>21.12.0</stripe-java.version>
     <caffeine.cache.version>3.1.8</caffeine.cache.version>
-    <org.mnode.ical4j.version>3.2.2</org.mnode.ical4j.version>
+    <org.mnode.ical4j.version>3.2.13</org.mnode.ical4j.version>
     <com.theokanning.openai-gpt3-java.version>0.16.0</com.theokanning.openai-gpt3-java.version>
     <okhttp.version>5.0.0-alpha.11</okhttp.version>
     <de.dentrassi.crypto.version>2.2.2</de.dentrassi.crypto.version>
