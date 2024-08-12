@@ -43,7 +43,6 @@
     <stripe-java.version>21.12.0</stripe-java.version>
     <caffeine.cache.version>3.1.8</caffeine.cache.version>
     <org.mnode.ical4j.version>3.2.13</org.mnode.ical4j.version>
-    <com.theokanning.openai-gpt3-java.version>0.16.0</com.theokanning.openai-gpt3-java.version>
     <okhttp.version>5.0.0-alpha.11</okhttp.version>
     <de.dentrassi.crypto.version>2.2.2</de.dentrassi.crypto.version>
     <com.newrelic.agent.java.version>7.11.1</com.newrelic.agent.java.version>
@@ -271,24 +270,6 @@
       <artifactId>caffeine</artifactId>
       <version>${caffeine.cache.version}</version>
       <optional>true</optional>
-    </dependency>
-
-    <dependency>
-      <groupId>com.theokanning.openai-gpt3-java</groupId>
-      <artifactId>service</artifactId>
-      <version>${com.theokanning.openai-gpt3-java.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>com.theokanning.openai-gpt3-java</groupId>
-      <artifactId>api</artifactId>
-      <version>${com.theokanning.openai-gpt3-java.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>com.theokanning.openai-gpt3-java</groupId>
-      <artifactId>client</artifactId>
-      <version>${com.theokanning.openai-gpt3-java.version}</version>
     </dependency>
 
     <dependency>
